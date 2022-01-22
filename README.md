@@ -13,12 +13,17 @@ A weight matrix, also known as a kernel or a weight matrix, connects each output
 ![2](https://user-images.githubusercontent.com/63404097/150634178-a5f74b24-9e59-41c4-beb3-75ab5f8c8d89.png)
 
 
+
+
+
 ![3](https://user-images.githubusercontent.com/63404097/150634146-6a9a9559-d582-459e-89a2-e849eb0ca7ac.png)
 
 
 
 ## Filters
 The convolutional layer's accompanying filter slides through each 3*3 group of pixels from the input. The technique is continued until the filter has covered the entire 3*3 pixel block. Convolving is the term for this type of sliding. The output of the dot product, known as a feature map, stores the results of the dot product.
+
+
 
 ![4](https://user-images.githubusercontent.com/63404097/150634131-4d58fc7e-fd13-4609-aea6-af736d43f286.png)
 
@@ -27,6 +32,8 @@ The convolutional layer's accompanying filter slides through each 3*3 group of p
 After convolution, the feature map we get is sensitive to the placement of the features in the input image. We use pooling to down sample the feature maps to alleviate this sensitivity. As a result, the down sampled feature will be more resistant to changes in the feature's position in the input image ( local translation invariance). We need to conduct a lot of multiplication operations because the input is so large. Fortunately, pooling reduces the amount of computing required during training. There are several types of pooling; the most prevalent options are max pooling and average pooling. We take the maximum value from a tiny region in the feature map while performing max pooling. If we use average pooling, we take the average of all values in the selected region.
 
 ![5](https://user-images.githubusercontent.com/63404097/150634096-7b51aa85-6ac2-45b5-bf76-7aa6b65546cd.png)
+
+
 
 
 
